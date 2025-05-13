@@ -233,8 +233,10 @@ function SimplePrinter:RunningRainbowPrint(data, depth, includeTime)
 
     Ext.Utils.Print(full)
 end
+local prefix = Ext.Mod.GetMod(ModuleUUID).Info.Directory
+prefix = prefix:gsub(" ","")
 
-SimplePrint = SimplePrinter:New{Prefix = "Scribe", ApplyColor = true}
+SimplePrint = SimplePrinter:New{Prefix = prefix or "AahzLib", ApplyColor = true}
 function SPrint(...) SimplePrint:SetFontColor(58, 183, 255) SimplePrint:Print(...) end
 function STest(...) SimplePrint:SetFontColor(202, 63, 109) SimplePrint:PrintTest(...) end
 function SDebug(...) SimplePrint:SetFontColor(216, 106, 189) SimplePrint:PrintDebug(...) end
