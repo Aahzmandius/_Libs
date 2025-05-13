@@ -27,6 +27,7 @@ Let's say you already have a git repository with at least one commit. You can ad
 *For example:*
 
 `git subtree add --prefix subtreeDirectory https://github.com/newfivefour/vimrc.git master --squash`
+`git subtree add --prefix Mods/EasyCheat/ScriptExtender/Lua/_Libs https://github.com/Aahzmandius/_Libs.git main --squash`
 
 This will clone `https://github.com/newfivefour/vimrc.git` into the directory `subtreeDirectory`.
 
@@ -36,6 +37,7 @@ This will clone `https://github.com/newfivefour/vimrc.git` into the directory `s
 If you want to pull in any new commits to the subtree from the remote, issue the same command as above, replacing `add` for `pull`:
 
 `git subtree pull --prefix subtreeDirectory https://github.com/newfivefour/vimrc.git master --squash`
+`git subtree pull --prefix Mods/EasyCheat/ScriptExtender/Lua/_Libs https://github.com/Aahzmandius/_Libs.git main --squash`
 
 
 ***
@@ -45,6 +47,7 @@ If you make a change to anything in `subtreeDirectory` the commit will be stored
 If you now want to update the subtree remote repository with that commit, you must run the same command, excluding `--squash` and replacing `pull` for `push`.
 
 `git subtree push --prefix subtreeDirectory https://github.com/newfivefour/vimrc.git master`
+`git subtree push --prefix Mods/EasyCheat/ScriptExtender/Lua/_Libs https://github.com/Aahzmandius/_Libs.git main`
 
 
 ***
