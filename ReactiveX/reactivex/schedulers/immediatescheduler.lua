@@ -1,5 +1,5 @@
 ---@module "util"
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
 
 --- Schedules Observables by running all operations immediately.
 --- @class ImmediateScheduler

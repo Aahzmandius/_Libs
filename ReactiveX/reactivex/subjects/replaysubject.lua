@@ -1,6 +1,6 @@
-local Subject = Ext.Require("Lib/ReactiveX/reactivex/subjects/subject.lua")
-local Observer = Ext.Require("Lib/ReactiveX/reactivex/observer.lua")
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
+local Subject = Ext.Require(LibPathRoots.ReactiveX.."subjects/subject.lua")
+local Observer = Ext.Require(LibPathRoots.ReactiveX.."observer.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
 
 --- A Subject that provides new Subscribers with some or all of the most recently
 --- produced values upon subscription.

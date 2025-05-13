@@ -1,5 +1,5 @@
 ---@module "util"
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
 
 --- A handle representing the link between an Observer and an Observable, as well as any
 --- work required to clean up after the Observable completes or the Observer unsubscribes.

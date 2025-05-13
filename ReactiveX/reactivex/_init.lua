@@ -1,27 +1,27 @@
 ---@alias Scheduler CooperativeScheduler|ImmediateScheduler|TimerScheduler
 
 ---@module "util"
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
 ---@module "subscription"
-local Subscription = Ext.Require("Lib/ReactiveX/reactivex/subscription.lua")
+local Subscription = Ext.Require(LibPathRoots.ReactiveX.."subscription.lua")
 ---@module "observer"
-local Observer = Ext.Require("Lib/ReactiveX/reactivex/observer.lua")
+local Observer = Ext.Require(LibPathRoots.ReactiveX.."observer.lua")
 ---@module "observable"
-local Observable = Ext.Require("Lib/ReactiveX/reactivex/observable.lua")
+local Observable = Ext.Require(LibPathRoots.ReactiveX.."observable.lua")
 ---@module "immediatescheduler"
-local ImmediateScheduler = Ext.Require("Lib/ReactiveX/reactivex/schedulers/immediatescheduler.lua")
+local ImmediateScheduler = Ext.Require(LibPathRoots.ReactiveX.."schedulers/immediatescheduler.lua")
 ---@module "cooperativescheduler"
-local CooperativeScheduler = Ext.Require("Lib/ReactiveX/reactivex/schedulers/cooperativescheduler.lua")
+local CooperativeScheduler = Ext.Require(LibPathRoots.ReactiveX.."schedulers/cooperativescheduler.lua")
 ---@module "timeoutscheduler"
-local TimerScheduler = Ext.Require("Lib/ReactiveX/reactivex/schedulers/timerscheduler.lua")
+local TimerScheduler = Ext.Require(LibPathRoots.ReactiveX.."schedulers/timerscheduler.lua")
 ---@module "subject"
-local Subject = Ext.Require("Lib/ReactiveX/reactivex/subjects/subject.lua")
+local Subject = Ext.Require(LibPathRoots.ReactiveX.."subjects/subject.lua")
 ---@module "asyncsubject"
-local AsyncSubject = Ext.Require("Lib/ReactiveX/reactivex/subjects/asyncsubject.lua")
+local AsyncSubject = Ext.Require(LibPathRoots.ReactiveX.."subjects/asyncsubject.lua")
 ---@module "behaviorsubject"
-local BehaviorSubject = Ext.Require("Lib/ReactiveX/reactivex/subjects/behaviorsubject.lua")
+local BehaviorSubject = Ext.Require(LibPathRoots.ReactiveX.."subjects/behaviorsubject.lua")
 ---@module "replaysubject"
-local ReplaySubject = Ext.Require("Lib/ReactiveX/reactivex/subjects/replaysubject.lua")
+local ReplaySubject = Ext.Require(LibPathRoots.ReactiveX.."subjects/replaysubject.lua")
 
 -- just need to touch a lift() to trigger AnonymousSubject's lazy load, only needed because separated library dependency
 local lazyLoadFix = Subject.Create():Count(function() return 42 end)

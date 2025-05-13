@@ -1,7 +1,7 @@
 ---@module "util"
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
 ---@module "subscription"
-local Subscription = Ext.Require("Lib/ReactiveX/reactivex/subscription.lua")
+local Subscription = Ext.Require(LibPathRoots.ReactiveX.."subscription.lua")
 
 --- @class SchedulerTask
 --- @field thread thread

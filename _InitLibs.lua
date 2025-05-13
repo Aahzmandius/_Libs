@@ -4,7 +4,7 @@
 -- 3. _Libs/AahzLib
 
 LibPathRoots = {
-    ReactiveX   = "_Libs/ReactiveX/", -- Loads directly into RX
+    ReactiveX   = "_Libs/ReactiveX/reactivex/", -- Loads directly into RX
     FocusCore   = "_Libs/FocusCore/", -- Metaclass available and main Helpers
     AahzLib     = "_Libs/AahzLib/",
 }
@@ -18,7 +18,7 @@ function RequireFiles(path, files)
     end
 end
 
----@module "reactivex._init"
+---@module "_Libs.ReactiveX.reactivex._init"
 RX = RX or Ext.Require("_Libs/ReactiveX/reactivex/_init.lua")
 
 Ext.Require("_Libs/FocusCore/_Init.lua")

@@ -1,7 +1,7 @@
 ---@module "subscription"
-local Subscription = Ext.Require("Lib/ReactiveX/reactivex/subscription.lua")
+local Subscription = Ext.Require(LibPathRoots.ReactiveX.."subscription.lua")
 ---@module "util"
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
 
 --- A scheduler that uses Ext.Timer to schedule events on delay, optionally every X milliseconds
 --- @class TimerScheduler

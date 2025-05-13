@@ -1,7 +1,7 @@
-local Observable = Ext.Require("Lib/ReactiveX/reactivex/observable.lua")
-local Observer = Ext.Require("Lib/ReactiveX/reactivex/observer.lua")
-local Subscription = Ext.Require("Lib/ReactiveX/reactivex/subscription.lua")
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
+local Observable = Ext.Require(LibPathRoots.ReactiveX.."observable.lua")
+local Observer = Ext.Require(LibPathRoots.ReactiveX.."observer.lua")
+local Subscription = Ext.Require(LibPathRoots.ReactiveX.."subscription.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
 
 --- AsyncSubjects are subjects that produce either no values or a single value.  If
 --- multiple values are produced via onNext, only the last one is used.  If onError is called, then

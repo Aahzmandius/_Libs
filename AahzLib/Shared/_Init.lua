@@ -11,7 +11,6 @@ RequireFiles(LibPathRoots.AahzLib.."Shared/", {
     "LocalSettings",
     "Data/_Init",
     "Helpers/_Init",
-    "Components/_Init",
     "Classes/_Init"
 })
 

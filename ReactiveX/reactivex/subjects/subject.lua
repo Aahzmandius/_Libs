@@ -1,9 +1,9 @@
-local Observable = Ext.Require("Lib/ReactiveX/reactivex/observable.lua")
-local Observer = Ext.Require("Lib/ReactiveX/reactivex/observer.lua")
-local Subscription = Ext.Require("Lib/ReactiveX/reactivex/subscription.lua")
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
-local AnonymousSubject = Ext.Require("Lib/ReactiveX/reactivex/subjects/anonymoussubject.lua")
-local SubjectSubscription = Ext.Require("Lib/ReactiveX/reactivex/subjectsubscription.lua")
+local Observable = Ext.Require(LibPathRoots.ReactiveX.."observable.lua")
+local Observer = Ext.Require(LibPathRoots.ReactiveX.."observer.lua")
+local Subscription = Ext.Require(LibPathRoots.ReactiveX.."subscription.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
+local AnonymousSubject = Ext.Require(LibPathRoots.ReactiveX.."subjects/anonymoussubject.lua")
+local SubjectSubscription = Ext.Require(LibPathRoots.ReactiveX.."subjectsubscription.lua")
 
 --- Subjects function both as an Observer and as an Observable. Subjects inherit all
 --- Observable functions, including subscribe. Values can also be pushed to the Subject, which will

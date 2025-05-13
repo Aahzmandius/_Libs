@@ -1,6 +1,6 @@
-local util = Ext.Require("Lib/ReactiveX/reactivex/util.lua")
+local util = Ext.Require(LibPathRoots.ReactiveX.."util.lua")
 local Subject -- lazy loaded to avoid loop
-local Subscription = Ext.Require("Lib/ReactiveX/reactivex/subscription.lua")
+local Subscription = Ext.Require(LibPathRoots.ReactiveX.."subscription.lua")
 local _initialized = false
 
 --- A specialized Subject which acts as a proxy when lifting a Subject.
@@ -16,7 +16,7 @@ AnonymousSubject.__tostring = util.Constant('AnonymousSubject')
 
 local function lazyInitClass()
     if _initialized then return end
-    Subject = Ext.Require("Lib/ReactiveX/reactivex/subjects/subject.lua")
+    Subject = Ext.Require(LibPathRoots.ReactiveX.."subjects/subject.lua")
     setmetatable(AnonymousSubject, Subject)
     _initialized = true
 end

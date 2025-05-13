@@ -1,5 +1,5 @@
 Imgui = Imgui or {}
-RX = RX or Ext.Require(LibPathRoots.ReactiveX.."/reactivex/_init.lua")
+RX = RX or Ext.Require(LibPathRoots.ReactiveX.."_init.lua")
 
 -- Internal animation tick setup
 Imgui._mainScheduler = RX.CooperativeScheduler.Create()
